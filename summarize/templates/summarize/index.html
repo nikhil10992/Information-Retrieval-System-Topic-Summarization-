@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tweet Summarization</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/summarize/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/static/summarize/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="/static/summarize/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="/static/summarize/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="/static/summarize/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="/static/summarize/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="/static/summarize/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="/static/summarize/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+      	<!--SIDE BAR-->
+        <div class="col-md-3 left_col menu_fixed">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="/summarize" class="site_title"><i class="fa fa-paw"></i> <span>Summaries</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Topics</h3>
+                <ul class="nav side-menu">                  
+                  <!--li>
+                  	<a href="javascript:void(0)">
+                  		<i class="fa fa-circle-o" id="topic_1"></i> Topic 1
+                  	</a>
+                  </li>
+                  <li>
+                  	<a href="javascript:void(0)">
+                  		<i class="fa fa-circle-o" id="topic_2"></i> Topic 2
+                  	</a>
+                  </li-->
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+          </div>
+        </div>
+        <!--SIDE BAR-->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+	      	<div class="col-md-12">
+	      		<div class="row tile_count">
+		            <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+		              <span class="count_top"><i class="fa fa-user"></i> Total Tweets</span>
+		              <div class="count" id="userCount">200</div>
+		            </div>
+		            <div class="col-md-9 col-sm-4 col-xs-6 tile_stats_count" id="topicSummary">
+		              <span class="count_top"><h2><b>Summaries</h2></b></span>
+		              	<ul>
+	          			</ul>
+		            </div>
+	            </div>
+				    </div>
+            <!-- /top tiles -->
+				    <!--WORD CLOUD-->
+				    <div class="row col-md-12">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="x_panel" id="topTweetsContainer">
+                    <div class="x_title">
+                        <h4>Top Tweets</h4>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="messages">
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <!--WIKI PEDIA SUMMARY-->
+                  <div class="row">
+                      <div class="x_panel">
+                        <div class="x_title">
+                          <h2>Wiki Summary</h2>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                          <p id="wiki_summary"></p>
+                        </div>
+                      </div>
+                  </div>
+                  <!--/WIKI PEDIA SUMMARY-->
+                  <!--WORD CLOUD-->
+                  <div class="row">
+                      <div class="x_panel">
+                          <br/>
+                          <div id="testingCanvasContainer" >
+                            <div class="x_title">
+                                <h2>Related Phrases</h2>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <canvas id="testingCanvas" style="background: white;">
+                              <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                            </canvas>
+                          </div>
+                          <div id="tags">
+                            <ul>
+                              <li><a href="javascript:void(0)">holiday shopping</a></li>
+                              <li><a href="javascript:void(0)">christmas decorations</a></li>
+                              <li><a href="javascript:void(0)">christmas eve</a></li>
+                              <li><a href="javascript:void(0)">christmas holidays</a></li>
+                              <li><a href="javascript:void(0)">festive season</a></li>
+                              <li><a href="javascript:void(0)">christmas lights</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <!--/WORD CLOUD-->
+                  <div class="row">
+                      <!--WORLD MAP-->
+                        <div class="x_panel">
+                          <div class="x_title">
+                            <h2>Tweet Geo Location</small></h2>
+                            <div class="clearfix"></div>
+                          </div>
+                          <div class="x_content">
+                            <div class="dashboard-widget-content">
+                              <div class="col-md-4 hidden-small">
+                                <h2 class="line_30">Countries</h2>
+                                <table class="countries_list">
+                                  <tbody id="mapSummary">
+                                    <tr>
+                                      <td>United States</td>
+                                      <td class="fs15 fw700 text-right">30%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>France</td>
+                                      <td class="fs15 fw700 text-right">2%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Germany</td>
+                                      <td class="fs15 fw700 text-right">6%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Spain</td>
+                                      <td class="fs15 fw700 text-right">5%</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Britain</td>
+                                      <td class="fs15 fw700 text-right">20%</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div id="world-map-gdp" class="col-md-7 col-sm-12 col-xs-12" style="height:230px;"></div>
+                            </div>
+                          </div>
+                        </div>
+                      <!--/WORLD MAP-->
+                  </div>
+                </div>
+                <div class ="col-md-3">
+                  <!--TOPIC EMOTION METER-->
+                  <div class="row">
+                    <div class="col-md-12 col-sm-4 col-xs-12">
+                      <div class="x_panel" id="emotionMeter">
+                        <div class="x_title" >
+                          <h2>Topic Emotion</h2>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="x_content">
+                          <div class="dashboard-widget-content" style='padding-top: 0px;'>
+                            <div class="sidebar-widget" style="width:100%">
+                              <h4 id="topicEmotionText"></h4>
+                              <canvas width="150" height="80" id="foo" class="" style="width: 160px; height: 100px;"></canvas>
+                              <div class="goal-wrapper">
+                                <span id="gauge-text" class="gauge-value" id="topicEmotionQuotient"></span>
+                                <span id="gauge-text" class="gauge-value">%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/TOPIC EMOTION METER-->
+                  <!--TOP WORDS-->
+                  <div class="row col-md-12">
+                    <div class="col-md-12 col-sm-4 col-xs-12 bg-white">
+                      <div class="x_title" >
+                        <h2>Top Words or Phrases</h2>
+                        <div class="clearfix"></div>
+                      </div>
+                      <!--Top Words List-->
+                      <div class="col-md-12 col-sm-12 col-xs-6" id="top_word_list">
+                      </div>
+                    </div>
+                  </div>
+                  <!--/TOPWORDS-->
+                </div>
+	      	  </div>
+          </div>
+        </div>
+        <!-- /page content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="/static/summarize/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/static/summarize/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/static/summarize/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/static/summarize/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="/static/summarize/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="/static/summarize/vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="/static/summarize/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="/static/summarize/vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="/static/summarize/vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="/static/summarize/vendors/Flot/jquery.flot.js"></script>
+    <script src="/static/summarize/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="/static/summarize/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="/static/summarize/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="/static/summarize/vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="/static/summarize/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="/static/summarize/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="/static/summarize/vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="/static/summarize/vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="/static/summarize/vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="/static/summarize/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="/static/summarize/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="/static/summarize/vendors/moment/min/moment.min.js"></script>
+    <script src="/static/summarize/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="/static/summarize/js/custom.min.js"></script>
+
+    <script type="text/javascript">
+
+      $('#topicEmotionText').html('positive');
+        var opts = {
+              lines: 15,
+            angle: 0,
+            lineWidth: 0.4,
+            pointer: {
+                length: 0.75,
+                strokeWidth: 0.01,
+                color: '#1D212A'
+            },
+            limitMax: 'false',
+            colorStart: '#1ABC9C',
+            colorStop: '#1ABC9C',
+            strokeColor: '#F0F3F3',
+            generateGradient: true
+        };
+        var target = document.getElementById('foo');
+        var gauge = new Gauge(target).setOptions(opts);
+
+        gauge.maxValue = 100;
+        gauge.animationSpeed = 20;
+        gauge.set(0.67*100);
+        gauge.setTextField(document.getElementById("gauge-text"));
+
+
+    	function setUserCount(count){
+	    		$('#userCount').html(count);
+    	}
+
+      function setWikiSummary(wiki){
+        $("#wiki_summary").html(wiki);
+      }
+
+    	function setTopicSummaries(summaryArray){
+    		var target = $('#topicSummary').find('ul');
+        $(target).html("");
+    		summaryArray.forEach(function(summary){
+    			var listElement = document.createElement('li');
+    			$(listElement).css('font-size','15px');
+    			$(listElement).html(summary);
+    			target.append(listElement);
+    		});
+    	}
+
+    	//need to change this
+      /*<li>
+          <img src="images/img.jpg" class="avatar" alt="Avatar">
+          <div class="message_date">
+            <h3 class="date text-info">24</h3>
+            <p class="month">May</p>
+          </div>
+          <div class="message_wrapper">
+            <h4 class="heading">Desmond Davison</h4>
+            <blockquote class="message">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.</blockquote>
+            <br />
+            <p class="url">
+              <span class="fs1 text-info" aria-hidden="true" data-icon=""></span>
+              <a href="#"><i class="fa fa-paperclip"></i> User Acceptance Test.doc </a>
+            </p>
+          </div>
+        </li-->*/
+    	function populateTopTweets(tweetObjectArray){
+    		var target = $('#topTweetsContainer').find('ul');
+        $(target).html("");
+    		for(var key in tweetObjectArray){
+          var li = document.createElement('li');
+          var img = document.createElement('img');
+          img.setAttribute("src",tweetObjectArray[key].profile_image_url[0]);
+          $(img).addClass('avatar');
+          $(img).css("margin-right","5px")
+          img.setAttribute("alt","Avatar");
+          var outerDiv = document.createElement("div");
+          $(outerDiv).addClass("messsage_wrapper");
+          var heading = document.createElement("h2");
+          $(heading).html('@'+tweetObjectArray[key].screen_name[0]);
+          $(heading).addClass('heading');
+          var tweet_text = document.createElement('p');
+          $(tweet_text).addClass('message');
+          $(tweet_text).html(tweetObjectArray[key].tweet_text[0]);
+          var br = document.createElement('br');
+          var tweet_date = document.createElement('p');
+          $(tweet_date).addClass('url');
+          $(tweet_date).html(tweetObjectArray[key].created_at[0]);
+
+          $(outerDiv).append(heading);
+          $(outerDiv).append(tweet_text);
+          $(outerDiv).append(br);
+          $(outerDiv).append(tweet_date);
+
+          $(li).append(img);
+          $(li).append(outerDiv);
+          $(target).append(li);
+        }
+    	}
+      //<li><a href="javascript:void(0)">holiday shopping</a></li>
+      function populatePhrases(topicPhrases){
+          var target = $("#tags").find('ul');
+          $(target).html("");
+          count=0;
+          topicPhrases.forEach(function(phrase){
+            if(count<8){
+              var li = document.createElement("li");
+              var a = document.createElement("a");
+              $(a).attr("href","javascript:void(0");
+              $(a).html(phrase);
+              $(li).append(a);
+              $(target).append(li);
+            }
+              count++;
+          });
+          if(!$('#testingCanvas').tagcanvas({
+            textColour: '#149B7E',
+            textHeight: 15,
+            outlineColour: '#ffffff',
+            reverse: true,
+            initial:0.5,
+            stretchX:2,
+            depth: 0.8,
+            maxSpeed: 0.05
+          },'tags')) {
+          // something went wrong, hide the canvas container
+          $('#testingCanvasContainer').hide();
+        }
+      }
+
+    	function setTopicEmotion(emotionObject){
+        for (var key in emotionObject){
+          $('#topicEmotionText').html(key);
+          gauge.set(emotionObject[key])
+          break;
+        }
+    	}
+
+      function setTopWords(topWords){
+        opts = topWords
+        var targetElement = document.getElementById("top_word_list");
+        $(targetElement).html("")
+        max = 0;
+        for (var key in opts){
+          if (max<opts[key])
+            max = opts[key]
+        }
+        for (var key in opts){
+          var container = document.createElement("div");
+          var p = document.createElement("p");
+          p.innerHTML = key;
+          var progress_bar_container = document.createElement("div");
+          $(progress_bar_container).addClass("progress progress_sm");
+          $(progress_bar_container).css("width","76%");
+          var progress_bar = document.createElement("div");
+          $(progress_bar).addClass("progress-bar bg-green");
+          $(progress_bar).css("width",(opts[key]/max)*100);
+          $(progress_bar).attr("role","progressbar");
+          $(progress_bar).attr("data-transitiongoal",opts[key]);
+          $(progress_bar_container).append(progress_bar);
+          $(container).append(p);
+          $(container).append(progress_bar_container);
+          $(targetElement).append(container);
+        }
+        $(targetElement).append("<div class='clearfix'></div>");
+      }
+      function setTopics(topicsList){
+        count=0;
+        topicsList.forEach(function(each){
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          var i = document.createElement('i');
+          $(i).addClass('fa fa-circle-o');
+          $(a).append(i);
+          $(a).append(each.join(' / '));
+          $(a).attr("href","javascript:void(0)");
+          $(li).append(a);
+          $(li).attr("alt",count);
+          $('.nav.side-menu').append(li);
+          count++;
+        });
+      }
+      function updateWorldMap(mapValues){
+        temp_sample={}
+        for(keys in mapValues){
+          lower_keys = keys.toLowerCase();
+          temp_sample[lower_keys] = mapValues[keys];
+        }
+        $('#mapSummary').html("");
+        //<tr>
+          //<td>United States</td>
+          // <td class="fs15 fw700 text-right">30%</td>
+        // </tr>
+        var tr = document.createElement("tr");
+        var td = document.createElement("td");
+        $(tr).append($(td).html('United States'));
+        var ntd = document.createElement("td");
+        $(ntd).addClass("fs15 fw700 text-right");
+        $(tr).append($(ntd).html(temp_sample['us']));
+        $('#mapSummary').append(tr);
+
+        var tr = document.createElement("tr");
+        var td = document.createElement("td");
+        $(tr).append($(td).html('United Kingdom'));
+        var ntd = document.createElement("td");
+        $(ntd).addClass("fs15 fw700 text-right");
+        $(tr).append($(ntd).html(temp_sample['gb']));
+        $('#mapSummary').append(tr);
+
+        var tr = document.createElement("tr");
+        var td = document.createElement("td");
+        $(tr).append($(td).html('Canada'));
+        var ntd = document.createElement("td");
+        $(ntd).addClass("fs15 fw700 text-right");
+        $(tr).append($(ntd).html(temp_sample['ca']));
+        $('#mapSummary').append(tr);
+
+        var tr = document.createElement("tr");
+        var td = document.createElement("td");
+        $(tr).append($(td).html('Australia'));
+        var ntd = document.createElement("td");
+        $(ntd).addClass("fs15 fw700 text-right");
+        $(tr).append($(ntd).html(temp_sample['au']));
+        $('#mapSummary').append(tr);
+
+        var tr = document.createElement("tr");
+        var td = document.createElement("td");
+        $(tr).append($(td).html('India'));
+        var ntd = document.createElement("td");
+        $(ntd).addClass("fs15 fw700 text-right");
+        $(tr).append($(ntd).html(temp_sample['in']));
+        $('#mapSummary').append(tr);
+
+        $('#world-map-gdp').vectorMap({
+            map: 'world_en',
+            backgroundColor: "white",
+            color: '#ffffff',
+            hoverOpacity: 0.6,
+            selectedColor: '#666666',
+            enableZoom: true,
+            showTooltip: true,
+            values: temp_sample,
+            scaleColors: ['#E6F2F0', '#149B7E'],
+            normalizeFunction: 'polynomial'
+        });
+      }
+      function updateMainPage(i){
+        setUserCount(final_data[i].totalTweets);
+        //console.log(final_data[i].relatedPhrases);
+        setWikiSummary(final_data[i].wikiSummary);
+        populatePhrases(final_data[i].relatedPhrases);
+        populateTopTweets(final_data[i].topTweets);
+        setTopicSummaries(final_data[i].tweetSummary)
+        setTopicEmotion(final_data[i].sentiment);
+        setTopWords(final_data[i].topWords);
+        updateWorldMap(final_data[i].countryCount)
+      }
+    </script>
+    <script src="/static/summarize/jquery.tagcanvas.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        
+      });
+    </script>
+
+    <!--Custom Script-->
+    <script>
+      jQuery.extend({
+          getValues: function(url) {
+              var result = null;
+              $.ajax({
+                  url: url,
+                  type: 'get',
+                  dataType: 'json',
+                  async: false,
+                  success: function(data) {
+                      result = data;
+                  }
+              });
+             return result;
+          }
+      });
+      var final_data = $.getValues('details/');
+      var topics = []
+      for(var key in final_data){
+        topics.push(final_data[key].topics);
+      }
+      setTopics(topics);
+      console.log(topics);
+    </script>
+
+    <script>
+    	var myOptions = []
+    	$(document).on("ready",function(){
+        setTopics(myOptions)
+    		$('.nav.side-menu li').first().find('a').trigger('click');
+    	});
+    	$(document).on('click','.nav.side-menu li',function(){
+			    $(this).siblings('li').removeClass('active');
+       		$(this).addClass('active');
+       		$(this).find('a').find('i').removeClass('fa fa-circle-o').addClass('fa fa-circle');
+       		$(this).siblings('li').find('a').find('i').removeClass('fa fa-circle').addClass('fa fa-circle-o');
+          updateMainPage($(this).attr("alt"));
+    	});
+    </script>
+
+  </body>
+</html>

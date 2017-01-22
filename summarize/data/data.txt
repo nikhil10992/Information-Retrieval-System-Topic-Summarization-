@@ -1,0 +1,832 @@
+{
+    "0": {
+        "countryCount": {
+            "AU": 1,
+            "BE": 3,
+            "CA": 10,
+            "ES": 1,
+            "FI": 1,
+            "FR": 1,
+            "GB": 44,
+            "ID": 1,
+            "IN": 1,
+            "PH": 3,
+            "PT": 2,
+            "SE": 1,
+            "US": 109
+        },
+        "relatedPhrases": [
+            "thanksgiving dinner",
+            "thanksgiving meal",
+            "dinner",
+            "christmas eve",
+            "meal",
+            "christmas presents",
+            "celebrate christmas",
+            "evening meal",
+            "christmas eve dinner",
+            "mince pies",
+            "traditionally eaten",
+            "roast turkey",
+            "spend christmas",
+            "course meal",
+            "christmas holidays",
+            "guests arrive",
+            "christmas dinners",
+            "suppers",
+            "toasts",
+            "cranberry sauce"
+        ],
+        "sentiment": {
+            "positive": 99.88116025924683
+        },
+        "topTweets": {
+            "806774875889156096": {
+                "created_at": [
+                    "Thu Dec 08 08:18:14 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/744977794128613376/ECaDEVYH_normal.jpg"
+                ],
+                "screen_name": [
+                    "AnthonyKovloski"
+                ],
+                "tweet_text": [
+                    "Chillie christmas #food #pics #yum https://t.co/UHyJnbxpAA"
+                ]
+            },
+            "806837739014352900": {
+                "created_at": [
+                    "Thu Dec 08 12:28:01 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/3191258083/5d3fc9603b2162fccd6caae5da7ca158_normal.jpeg"
+                ],
+                "screen_name": [
+                    "vickyhartley"
+                ],
+                "tweet_text": [
+                    "@dingomustang yummy Xmas food here... https://t.co/3SJRdXapC4"
+                ]
+            },
+            "806864540839182337": {
+                "created_at": [
+                    "Thu Dec 08 14:14:32 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/806837756768854017/sHAOg1Ai_normal.jpg"
+                ],
+                "screen_name": [
+                    "KYUNGSOOGNS"
+                ],
+                "tweet_text": [
+                    "its christmas of course there'll be food"
+                ]
+            },
+            "806947435180412928": {
+                "created_at": [
+                    "Thu Dec 08 19:43:55 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/517787104730832897/e4PmfIr__normal.jpeg"
+                ],
+                "screen_name": [
+                    "CShomelending"
+                ],
+                "tweet_text": [
+                    "Have fun this holiday season with these fun Christmas food crafts! #diy #food #christmas #crafts\nhttps://t.co/gpSLvWkaso"
+                ]
+            },
+            "806948649435545600": {
+                "created_at": [
+                    "Thu Dec 08 19:48:45 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/643946667134193665/LsP7DWRu_normal.jpg"
+                ],
+                "screen_name": [
+                    "jonathanwilhoit"
+                ],
+                "tweet_text": [
+                    "3 Easy DIY Garlands for Your Food-Lover\u2019s Christmas Tree \u2014 The Food-Lover\u2019s Christmas Tree https://t.co/nfpbXODMgu"
+                ]
+            }
+        },
+        "topWords": {
+            "entered": 649,
+            "gift": 1041,
+            "giveaway": 564,
+            "holiday": 1313,
+            "win": 814
+        },
+        "topics": [
+            "food",
+            "gift"
+        ],
+        "totalTweets": 4472,
+        "tweetSummary": [
+            "its christmas of course there'll be foodHave fun this holiday season with these fun Christmas food crafts!",
+            "Easy DIY Garlands for Your Food-Lover\u2019s Christmas Tree \u2014 The Food-Lover\u2019s Christmas Tree  christmas     yummy Xmas food here...  we want for christmas \ud83c\udf84 is food.",
+            "@ GMA Network Center  favourite food of christmas????"
+        ],
+        "wikiSummary": "Christmas dinner is a meal traditionally eaten at Christmas. This meal can take place any time from the evening of Christmas Eve to the evening of Christmas Day itself. The meals are often particularly rich and substantial, in the tradition of the Christian feast day celebration, and form a significant part of gatherings held to celebrate Christmas. In some cases, there is a ritual element to the meal related to the religious celebration.\nThe actual meal consumed varies in different parts of the world with regional cuisines and local traditions."
+    },
+    "1": {
+        "countryCount": {
+            "AU": 12,
+            "BR": 1,
+            "BS": 1,
+            "CA": 27,
+            "CH": 1,
+            "CO": 1,
+            "DE": 3,
+            "DK": 1,
+            "ES": 1,
+            "FR": 1,
+            "GB": 82,
+            "IE": 2,
+            "IL": 1,
+            "JM": 1,
+            "MX": 1,
+            "NG": 1,
+            "NZ": 6,
+            "PH": 4,
+            "RU": 1,
+            "SE": 1,
+            "SG": 1,
+            "US": 246,
+            "ZA": 3
+        },
+        "relatedPhrases": [
+            "ebenezer scrooge",
+            "christmas",
+            "charles dickens classic",
+            "bob cratchit",
+            "jacob marley",
+            "charles dickens adapted",
+            "bleak midwinter",
+            "very merry muppet",
+            "muppet christmas carol",
+            "good king wenceslas",
+            "christmas carols",
+            "kris kringle",
+            "wexford carol",
+            "grinch stole christmas",
+            "christmas carol starring",
+            "kranks",
+            "nativity play",
+            "christmas pageant",
+            "christmastime",
+            "mrs cratchit"
+        ],
+        "sentiment": {
+            "negative": 57.088470458984375
+        },
+        "topTweets": {
+            "805576713908482048": {
+                "created_at": [
+                    "Mon Dec 05 00:57:10 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/775509482692612096/tbQY6RRz_normal.jpg"
+                ],
+                "screen_name": [
+                    "alainamessineo"
+                ],
+                "tweet_text": [
+                    "I can't stop singing Christmas carols"
+                ]
+            },
+            "805581056334295040": {
+                "created_at": [
+                    "Mon Dec 05 01:14:25 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/3317799090/35598ef2f3385243ecf1bdf82ff6344c_normal.jpeg"
+                ],
+                "screen_name": [
+                    "HerbHaus"
+                ],
+                "tweet_text": [
+                    "Singing carols"
+                ]
+            },
+            "806299015952343040": {
+                "created_at": [
+                    "Wed Dec 07 00:47:20 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/489238800757821440/NeTnnhv0_normal.jpeg"
+                ],
+                "screen_name": [
+                    "HHMS_Principal"
+                ],
+                "tweet_text": [
+                    "Singing carols together. https://t.co/BMaSXss680"
+                ]
+            },
+            "806595124587360256": {
+                "created_at": [
+                    "Wed Dec 07 20:23:58 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/800050948198531072/w1hweWV6_normal.jpg"
+                ],
+                "screen_name": [
+                    "pete_0587"
+                ],
+                "tweet_text": [
+                    "This is me singing Christmas Carols....\ud83d\ude1c\ud83d\ude02 https://t.co/y8bmE0NCaq"
+                ]
+            },
+            "806605587429605376": {
+                "created_at": [
+                    "Wed Dec 07 21:05:32 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/1237111536/RayBlueShirt_normal.jpg"
+                ],
+                "screen_name": [
+                    "churchguidenews"
+                ],
+                "tweet_text": [
+                    "Do you like singing Christmas Carols? https://t.co/fo66UR3G7m"
+                ]
+            }
+        },
+        "topWords": {
+            "carols": 3118,
+            "gift": 534,
+            "hanukkah": 1446,
+            "holiday": 805,
+            "year": 662
+        },
+        "topics": [
+            "carols",
+            "singing"
+        ],
+        "totalTweets": 6683,
+        "tweetSummary": [
+            "is me singing Christmas Carols....\ud83d\ude1c\ud83d\ude02  you like singing Christmas Carols?",
+            "you like singing Christmas Carols?",
+            "rapper would be the funniest singing Christmas carols?Singing Christmas carols all the way home from North Bay\ud83d\ude49\ud83c\udf85\ud83c\udffcI miss singing Christmas carols with the tubas@SofiaCarson can I get you singing Christmas carols under my tree for ChristmasTrue love is singing Christmas carols togetherSinging Christmas carols with my family  singing \ud83c\udfb6   singing carols is like my kryptoniteMay have gotten in trouble for singing Christmas carols too"
+        ],
+        "wikiSummary": "A Christmas carol (also called a no\u00ebl, from the French word meaning \"Christmas\") is a carol (song or hymn) whose lyrics are on the theme of Christmas, and which is traditionally sung on Christmas itself or during the surrounding holiday season. Christmas carols may be regarded as a subset of the broader category of Christmas music."
+    },
+    "2": {
+        "countryCount": {
+            "AU": 4,
+            "BE": 2,
+            "CA": 26,
+            "DE": 2,
+            "FI": 1,
+            "GB": 45,
+            "ID": 3,
+            "IL": 2,
+            "IN": 2,
+            "IT": 1,
+            "MX": 1,
+            "MY": 2,
+            "NG": 2,
+            "PH": 2,
+            "TC": 1,
+            "TH": 1,
+            "TR": 1,
+            "US": 277,
+            "VE": 1,
+            "ZA": 2
+        },
+        "relatedPhrases": [
+            "chanukah",
+            "jewish holidays",
+            "purim",
+            "lag baomer",
+            "hannukah",
+            "passover",
+            "passover seder",
+            "yom kippur",
+            "pesach",
+            "menorah",
+            "simchat torah",
+            "yom hashoah",
+            "rosh hashana",
+            "latkes",
+            "shavuot",
+            "thanksgivukkah",
+            "hanukah",
+            "shabbos",
+            "yom ha atzmaut",
+            "hanukkah menorah"
+        ],
+        "sentiment": {
+            "negative": 45.71978151798248
+        },
+        "topTweets": {
+            "805388941813841920": {
+                "created_at": [
+                    "Sun Dec 04 12:31:01 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/3458923230/3bac4cbc699628fc6d7b138205277560_normal.jpeg"
+                ],
+                "screen_name": [
+                    "Thyjuan"
+                ],
+                "tweet_text": [
+                    "Hanukkah Cookies  #Hanukkah #cookies #december #holiday https://t.co/vRshdpYaTP"
+                ]
+            },
+            "805542235219619840": {
+                "created_at": [
+                    "Sun Dec 04 22:40:09 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/766087263625379840/K7jU-Vjp_normal.jpg"
+                ],
+                "screen_name": [
+                    "fuckviva"
+                ],
+                "tweet_text": [
+                    "oy vey the only true holiday is Hanukkah https://t.co/l1MqSuGpvj"
+                ]
+            },
+            "806170102844588033": {
+                "created_at": [
+                    "Tue Dec 06 16:15:05 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/687342527129600004/PvP2ukmq_normal.jpg"
+                ],
+                "screen_name": [
+                    "WholeFoodsATL"
+                ],
+                "tweet_text": [
+                    "We want to hear about your holiday traditions - like how you make Hanukkah latkes! Tag your holiday tradition with\u2026 https://t.co/towtv2Seot"
+                ]
+            },
+            "806189371506520065": {
+                "created_at": [
+                    "Tue Dec 06 17:31:39 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/792673157920456704/oOGnDSSy_normal.jpg"
+                ],
+                "screen_name": [
+                    "tigrah"
+                ],
+                "tweet_text": [
+                    "This isn't an alternative Christmas. It's just Hanukkah. Different holiday altogether. https://t.co/tYkApvaER6"
+                ]
+            },
+            "806193071692087296": {
+                "created_at": [
+                    "Tue Dec 06 17:46:21 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/803713170841989120/HR9wRDUe_normal.jpg"
+                ],
+                "screen_name": [
+                    "1CriticalBitch"
+                ],
+                "tweet_text": [
+                    "Getting in that holiday spirit - https://t.co/qjgvcBphfC #christmas #hanukkah @peeweeherman #afilmclub\u2026 https://t.co/R1srdn5HtX"
+                ]
+            }
+        },
+        "topWords": {
+            "carols": 790,
+            "hanukkah": 3090,
+            "happy": 681,
+            "holiday": 2200,
+            "kwanzaa": 616
+        },
+        "topics": [
+            "hanukkah",
+            "holiday"
+        ],
+        "totalTweets": 7084,
+        "tweetSummary": [
+            "in that holiday spirit -     \u2026  want to hear about your holiday traditions - like how you make Hanukkah latkes!",
+            "Tag your holiday tradition with\u2026  want to hear about your holiday traditions- like how you make Hanukkah latkes!",
+            "Tag your holiday tradition with\u2026  oh Hanukkah - a Pentatonix-style holiday music video from Jewis...  via  by Adam Sandler will always be the greatest holiday song ever, don't @ meWhen does  begin this year?"
+        ],
+        "wikiSummary": "Hanukkah (/\u02c8h\u0251\u02d0n\u0259k\u0259/ HAH-n\u0259-k\u0259; Hebrew: \u05d7\u05b2\u05e0\u05bb\u05db\u05b8\u05bc\u05d4\u200e khanuk\u00e1, Tiberian: khanuk\u00e1, usually spelled \u05d7\u05e0\u05d5\u05db\u05d4, pronounced [\u03c7anu\u02c8ka] in Modern Hebrew, [\u02c8\u03c7anuk\u0259] or [\u02c8\u03c7anik\u0259] in Yiddish; a transliteration also romanized as Chanukah or \u1e24anukah) is a Jewish holiday commemorating the rededication of the Holy Temple (the Second Temple) in Jerusalem at the time of the Maccabean Revolt against the Seleucid Empire. Hanukkah is observed for eight nights and days, starting on the 25th day of Kislev according to the Hebrew calendar, which may occur at any time from late November to late December in the Gregorian calendar. It is also known as the Festival of Lights and the Feast of Dedication.\nThe festival is observed by the kindling of the lights of a unique candelabrum, the nine-branched menorah (also called a Chanukiah/Hanukiah), one additional light on each night of the holiday, progressing to eight on the final night. The typical menorah consists of eight branches with an additional visually distinct branch."
+    },
+    "3": {
+        "countryCount": {
+            "AT": 1,
+            "AU": 4,
+            "BR": 1,
+            "CA": 15,
+            "DE": 1,
+            "FI": 1,
+            "FR": 3,
+            "GB": 31,
+            "IE": 4,
+            "IN": 1,
+            "IT": 4,
+            "JM": 1,
+            "MX": 1,
+            "NG": 1,
+            "NZ": 2,
+            "RO": 1,
+            "SG": 1,
+            "US": 111
+        },
+        "relatedPhrases": [
+            "santa",
+            "kris kringle",
+            "mrs claus",
+            "easter bunny",
+            "christmas",
+            "harpers png",
+            "santas",
+            "christmas themed",
+            "christmas elves",
+            "jingle bells",
+            "christmas santa claus",
+            "christmas tree",
+            "sinterklaas",
+            "christmas presents",
+            "mall santa",
+            "i saw mommy",
+            "merry christmas",
+            "grinch",
+            "kranks",
+            "tooth fairy"
+        ],
+        "sentiment": {
+            "neutral": 71.10055685043335
+        },
+        "topTweets": {
+            "805567196927664128": {
+                "created_at": [
+                    "Mon Dec 05 00:19:21 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/3016740103/858d6a1730a536b33275bf1a543da4a5_normal.jpeg"
+                ],
+                "screen_name": [
+                    "scottia"
+                ],
+                "tweet_text": [
+                    "https://t.co/TfMFGfBvQ2: Secret Santa Is Coming Home For Christmas https://t.co/J0NiMNGpun\u00a0\u2026#horror\u2026\u2026 https://t.co/wtIyvvICfL"
+                ]
+            },
+            "805604919009050625": {
+                "created_at": [
+                    "Mon Dec 05 02:49:14 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/794162203394011136/09RxUgwb_normal.jpg"
+                ],
+                "screen_name": [
+                    "DavesXmas"
+                ],
+                "tweet_text": [
+                    "Wow! Check out this display in #DykerHeights! \ud83c\udf85\ud83c\udffc#Santa would be proud! https://t.co/uTec8Jlor5"
+                ]
+            },
+            "805819030879600640": {
+                "created_at": [
+                    "Mon Dec 05 17:00:03 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/790988682924785665/WISrucU1_normal.jpg"
+                ],
+                "screen_name": [
+                    "quiltsandmore"
+                ],
+                "tweet_text": [
+                    "Lay out an adorable snack mat just for Santa! https://t.co/TlEUKb3Gof https://t.co/byf79kdjkP"
+                ]
+            },
+            "806285867933429760": {
+                "created_at": [
+                    "Tue Dec 06 23:55:05 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/768786967341465600/QKRf61R0_normal.jpg"
+                ],
+                "screen_name": [
+                    "KohlerAgain"
+                ],
+                "tweet_text": [
+                    "@Apple why isn't there a Hanukkah Harry emoji?"
+                ]
+            },
+            "806311140309475329": {
+                "created_at": [
+                    "Wed Dec 07 01:35:31 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/785586336182865920/b7LWFcHN_normal.jpg"
+                ],
+                "screen_name": [
+                    "trysmallthings"
+                ],
+                "tweet_text": [
+                    "@smcgillivray All the Christmas carols! Especially Bing + Harry Connick Jr #HooverHoliday"
+                ]
+            }
+        },
+        "topWords": {
+            "carols": 457,
+            "gift": 389,
+            "hanukkah": 553,
+            "holiday": 1026,
+            "win": 394
+        },
+        "topics": [
+            "harry",
+            "santa"
+        ],
+        "totalTweets": 3483,
+        "tweetSummary": [
+            "why isn't there a Hanukkah Harry emoji?",
+            "All the Christmas carols!",
+            "Especially Bing + Harry Connick Jr  Secret Santa Is Coming Home For Christmas \u00a0\u2026\u2026\u2026  Check out this display in !"
+        ],
+        "wikiSummary": "Santa Claus, also known as Saint Nicholas, Saint Nick, Kris Kringle, Father Christmas, or simply Santa, is a legendary figure of Western culture who is said to bring gifts to the homes of well-behaved (\"good\" or \"nice\") children on Christmas Eve (24 December) and the early morning hours of Christmas Day (25 December). The modern Santa Claus grew out of traditions surrounding the historical Saint Nicholas, a fourth-century Greek bishop and gift-giver of Myra, the British figure of Father Christmas, the Dutch figure of Sinterklaas (himself based on Saint Nicholas), the German figure of the Christkind (a fabulized Christ Child), and the holidays of Twelfth Night and Epiphany and their associated figures of the Three Kings (based on the gift-giving Magi of the Nativity) and Befana. Some maintain Santa Claus also absorbed elements of the Germanic god Wodan, who was associated with the pagan midwinter event of Yule and led the Wild Hunt, a ghostly procession through the sky.\nSanta Claus is generally depicted as a portly, joyous, white-bearded man\u2014sometimes with spectacles\u2014wearing a red coat with white fur collar and cuffs, white fur-cuffed red trousers, and black leather belt and boots and who carries a bag full of gifts for children. This image became popular in the United States and Canada in the 19th century due to the significant influence of the 1823 poem \"A Visit From St."
+    },
+    "4": {
+        "countryCount": {
+            "AT": 2,
+            "AU": 2,
+            "AX": 1,
+            "BE": 1,
+            "CA": 18,
+            "CR": 1,
+            "DK": 1,
+            "FR": 3,
+            "GB": 21,
+            "IT": 1,
+            "NL": 2,
+            "PH": 8,
+            "PL": 1,
+            "SG": 1,
+            "TH": 1,
+            "UA": 3,
+            "US": 87
+        },
+        "relatedPhrases": [
+            "gifts",
+            "donation",
+            "wedding gift",
+            "generosity",
+            "christmas gift",
+            "gratitude",
+            "giver",
+            "parting gift",
+            "donated",
+            "family heirloom",
+            "benefaction",
+            "bequest",
+            "gifting",
+            "endow",
+            "birthday gift",
+            "wedding gifts",
+            "benefactor",
+            "blessing",
+            "expensive gifts",
+            "birthday present"
+        ],
+        "sentiment": {
+            "positive": 99.61056113243103
+        },
+        "topTweets": {
+            "805490437314252801": {
+                "created_at": [
+                    "Sun Dec 04 19:14:20 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/556296905076908032/hI3AGTkr_normal.jpeg"
+                ],
+                "screen_name": [
+                    "thefreckledrose"
+                ],
+                "tweet_text": [
+                    "\u2018Tis The Season To Stay Tidy  https://t.co/vCU18wWUbL #christmas #giveaway #win #clean #holiday #enter"
+                ]
+            },
+            "805532350897651712": {
+                "created_at": [
+                    "Sun Dec 04 22:00:53 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/645799202082021376/f1pLOVye_normal.png"
+                ],
+                "screen_name": [
+                    "PevoniaAust"
+                ],
+                "tweet_text": [
+                    "WIN AMAZING CHRISTMAS GIFT SETS from Pevonia Botanica Australia! Click here to join: https://t.co/DYAtpcG5Fz #Pevonia #Christmas #Giveaway"
+                ]
+            },
+            "805810685078867968": {
+                "created_at": [
+                    "Mon Dec 05 16:26:53 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/686258729348534273/W4e7OVF5_normal.jpg"
+                ],
+                "screen_name": [
+                    "lakeerieartists"
+                ],
+                "tweet_text": [
+                    "#EntertoWin December $100 Amazon or Paypal Holiday #Giveaway @lakeerieartists #christmas #family\u2026 https://t.co/LU5sS1baxD"
+                ]
+            },
+            "805818149400702976": {
+                "created_at": [
+                    "Mon Dec 05 16:56:32 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/788453316107857920/oNrsNTRm_normal.jpg"
+                ],
+                "screen_name": [
+                    "MusingsoftheMB"
+                ],
+                "tweet_text": [
+                    "Check out holiday recipes, favorite books of @_StephDeMarco_ &amp; enter @FoxyBlogs giveaway! https://t.co/Yiq3hXahqy"
+                ]
+            },
+            "806586912219758592": {
+                "created_at": [
+                    "Wed Dec 07 19:51:20 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/686258729348534273/W4e7OVF5_normal.jpg"
+                ],
+                "screen_name": [
+                    "lakeerieartists"
+                ],
+                "tweet_text": [
+                    "#EntertoWin December $100 Amazon or Paypal Holiday Giveaway @lakeerieartists #christmas #giveaway https://t.co/aR6vAdtvRJ"
+                ]
+            }
+        },
+        "topWords": {
+            "card": 1188,
+            "gift": 2767,
+            "giveaway": 1192,
+            "holiday": 1430,
+            "win": 1000
+        },
+        "topics": [
+            "gift",
+            "giveaway"
+        ],
+        "totalTweets": 4811,
+        "tweetSummary": [
+            "December $100 Amazon or Paypal Holiday Giveaway     AMAZING CHRISTMAS GIFT SETS from Pevonia Botanica Australia!",
+            "Click here to join:    \u2018Tis The Season To Stay Tidy         December $100 Amazon or Paypal Holiday    \u2026  out holiday recipes, favorite books of  &amp; enter  giveaway!",
+            "@beth_caudill celebrates the  season w/ music\n\n   6 of 25 days of Christmas Carols: Mele Kalikimaka : And Giveaway winner!"
+        ],
+        "wikiSummary": "A gift or a present is an item given to someone without the expectation of payment. An item is not a gift, if that item, itself, is already owned by the one to whom it is given. Although gift-giving might involve an expectation of reciprocity, a gift is meant to be free. In many countries, the act of mutually exchanging money, goods, etc. may sustain social relations and contribute to social cohesion."
+    },
+    "5": {
+        "countryCount": {
+            "AU": 11,
+            "CA": 12,
+            "CO": 1,
+            "CZ": 1,
+            "DE": 1,
+            "ES": 1,
+            "FI": 1,
+            "GB": 76,
+            "GR": 1,
+            "GT": 1,
+            "IE": 2,
+            "IL": 1,
+            "IN": 2,
+            "IQ": 1,
+            "IT": 1,
+            "KE": 1,
+            "MY": 1,
+            "NO": 1,
+            "NZ": 2,
+            "PH": 4,
+            "PT": 1,
+            "SG": 3,
+            "TH": 1,
+            "US": 157,
+            "ZA": 1
+        },
+        "relatedPhrases": [
+            "ebenezer scrooge",
+            "christmas",
+            "charles dickens classic",
+            "bob cratchit",
+            "jacob marley",
+            "charles dickens adapted",
+            "bleak midwinter",
+            "very merry muppet",
+            "muppet christmas carol",
+            "good king wenceslas",
+            "christmas carols",
+            "kris kringle",
+            "wexford carol",
+            "grinch stole christmas",
+            "christmas carol starring",
+            "kranks",
+            "nativity play",
+            "christmas pageant",
+            "christmastime",
+            "mrs cratchit"
+        ],
+        "sentiment": {
+            "positive": 58.20123553276062
+        },
+        "topTweets": {
+            "805534906872987649": {
+                "created_at": [
+                    "Sun Dec 04 22:11:02 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/445370420099678208/fXX4kZsB_normal.jpeg"
+                ],
+                "screen_name": [
+                    "NixaXC"
+                ],
+                "tweet_text": [
+                    "Loving the Christmas Carols  NHS Choir https://t.co/LlECgVawcN"
+                ]
+            },
+            "805538838890352640": {
+                "created_at": [
+                    "Sun Dec 04 22:26:40 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/748931569704853504/68ghI3hA_normal.jpg"
+                ],
+                "screen_name": [
+                    "charity_hubbard"
+                ],
+                "tweet_text": [
+                    "\ud83c\udf89 On our way to hear \n\ud83c\udfb6 Christmas carols being sung by a choir!\ud83c\udfb6 \ud83c\udf84 We're minus one because she\u2026 https://t.co/eIFF4jCOWM"
+                ]
+            },
+            "805566766587977728": {
+                "created_at": [
+                    "Mon Dec 05 00:17:38 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/804198243433205760/t4dHkXPt_normal.jpg"
+                ],
+                "screen_name": [
+                    "Netties_Kid"
+                ],
+                "tweet_text": [
+                    "\ud83d\udcf9 King\u2019s College Choir - Christmas Carols https://t.co/lIEnRIlNU4"
+                ]
+            },
+            "805682755296063488": {
+                "created_at": [
+                    "Mon Dec 05 07:58:32 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/621790780923904000/eVQi0W8O_normal.jpg"
+                ],
+                "screen_name": [
+                    "OlsosT"
+                ],
+                "tweet_text": [
+                    "Well done to our choir at the Terrigal Carols on the Beach. A great job! https://t.co/N5ojmuiArB"
+                ]
+            },
+            "806280679155789824": {
+                "created_at": [
+                    "Tue Dec 06 23:34:28 +0000 2016"
+                ],
+                "profile_image_url": [
+                    "http://pbs.twimg.com/profile_images/539830554506457089/fJcVx4LZ_normal.jpeg"
+                ],
+                "screen_name": [
+                    "Conrad_Grebel"
+                ],
+                "tweet_text": [
+                    "Lessons and Carols with the Chapel Choir. https://t.co/kD66xGIVl2"
+                ]
+            }
+        },
+        "topWords": {
+            "best": 507,
+            "carols": 1566,
+            "gift": 690,
+            "hanukkah": 537,
+            "holiday": 720
+        },
+        "topics": [
+            "carols",
+            "choir"
+        ],
+        "totalTweets": 4544,
+        "tweetSummary": [
+            "On our way to hear \n\ud83c\udfb6 Christmas carols being sung by a choir!",
+            "Choir are currently singing carols at Solihull Hospital.Choir visit to record Christmas Carols at   visit to record Christmas Carols at    grade choir performing Christmas carols   music for choir and brass and carols for everyone to sing.",
+            "Cocoa and cookies from  &amp; carols from Combined Efforts Men's Choir."
+        ],
+        "wikiSummary": "A Christmas carol (also called a no\u00ebl, from the French word meaning \"Christmas\") is a carol (song or hymn) whose lyrics are on the theme of Christmas, and which is traditionally sung on Christmas itself or during the surrounding holiday season. Christmas carols may be regarded as a subset of the broader category of Christmas music."
+    }
+}
