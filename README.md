@@ -4,6 +4,7 @@ Description :
 
 This is a one-page webiste that displays summary of a sizable tweet repository.
 The summary in turn is categorized into the following
+
 	•	Summary of the Topic
 	•	Top Tweets
 	•	Wiki Summary
